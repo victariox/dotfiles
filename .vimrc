@@ -12,7 +12,7 @@ call vundle#end()
 filetype plugin indent on       
 
 syntax on                                   "Colorful syntax
-colorscheme monokai                         "Set colorscheme 
+colorscheme molokai                         "Set colorscheme 
 
 set tabstop=4                               "Spaces per TAB
 set softtabstop=4                           "Insert space per TAB
@@ -26,5 +26,8 @@ set hlsearch                                "Highlight search matches
 set ignorecase                              "Ignore case while searching
 
 
-
+set encoding=utf-8
 set t_Co=256                                "Use 256 color
+
+let g:molokai_original = 1
+let g:rehash256 = 1
