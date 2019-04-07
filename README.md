@@ -8,8 +8,10 @@ Login manager Ly from github
 #### i3-config
 Path : <home>/.config/i3/config
 
-#### i3-status
-Path : /etc/i3status.conf
+#### polybar
+Path : <home>/.config/polybar/config
+
+
 
 #### Xorg-Profile
 Path : <home>/.xprofile
