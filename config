@@ -11,6 +11,9 @@
 
 set $mod Mod1
 
+set $left_monitor HDMI-0
+set $right_monitor DP-1
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 8
@@ -107,6 +110,18 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+
+workspace $ws1  output $left_monitor  #main_terminal 
+workspace $ws2  output $right_monitor #browser ws
+workspace $ws3  output $left_monitor  #programming ws
+workspace $ws4  output $left_monitor  # 
+workspace $ws5  output $right_monitor
+workspace $ws6  output $left_monitor  #git
+workspace $ws7  output $right_monitor
+workspace $ws8  output $right_monitor
+workspace $ws9  output $right_monitor #spotify
+workspace $ws10 output $left_monitor  #steam
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -176,7 +191,7 @@ bindsym $mod+r mode "resize"
 #}
 
 # i3-gaps basics
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel -0
 #gaps inner 65
 #
 #
