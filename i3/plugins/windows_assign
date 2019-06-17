@@ -1,0 +1,8 @@
+#########################################################################
+## Window Assignment                                                    #
+#########################################################################
+
+assign [class="Steam"] $ws9
+assign [class="Spotify"] $ws8
+assign [class="ravenfield*"] $ws10
+for_window [class = "Spotify"] move to workspace $ws8

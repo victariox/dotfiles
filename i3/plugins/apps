@@ -1,0 +1,16 @@
+#########################################################################
+## Application                                                          #
+#########################################################################
+
+# i3-lock bindings
+bindsym $super+l exec i3lock -i ~/Pictures/portal_black.png && sleep 1 && xset dpms force off
+
+# start dmenu (a program launcher)
+bindsym $mod+q exec "rofi -modi window,drun -show drun -sidebar-mode -location 2 -yoffset 2 -bw 2"
+
+# scrot screenshot bindings
+bindsym --release $mod+Sys_Req exec "scrot '/home/wolf/Pictures/Scrots/scrot_%d%m%y_%H-%M-%S.png'"
+bindsym --release $mod+Shift+Sys_Req exec "scrot '/home/wolf/Pictures/Scrots/scrot_%d%m%y_%H-%M-%S.png' -s"
+
+# Function apps
+bindsym $mod+F1 exec "firefox"
