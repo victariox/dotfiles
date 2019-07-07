@@ -49,6 +49,6 @@ elif [ "$player_status" = "Paused" ]; then
     echo ""
     polybar-msg hook play_button 2
 else
-    echo "-"
+    echo ""
     polybar-msg hook play_button 3
 fi
