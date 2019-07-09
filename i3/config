@@ -166,7 +166,14 @@ bindsym $mod+q exec "rofi -modi window,drun -show drun -sidebar-mode -location 2
 bindsym --release $mod+Sys_Req exec "scrot '/home/wolf/Pictures/Scrots/scrot_%d%m%y_%H-%M-%S.png'"
 bindsym --release $mod+Shift+Sys_Req exec "scrot '/home/wolf/Pictures/Scrots/scrot_%d%m%y_%H-%M-%S.png' -s"
 
-# Function apps
+# media keys for mpc
+bindsym $super+Up    exec "pulseaudio-ctl up"
+bindsym $super+Down  exec "pulseaudio-ctl down"
+bindsym $super+Left  exec "mpc prev"
+bindsym $super+Right exec "mpc next"
+bindsym $super+space exec "mpc toggle"
+
+# function apps
 bindsym $mod+F1 exec "firefox"
 
 #########################################################################
