@@ -1,0 +1,42 @@
+#!/bin/bash
+
+get_icon() {
+    case $1 in
+        01d) ICON="";;
+        01n) ICON="";;
+        02d) ICON="";; 
+        02n) ICON="";;
+        02d) ICON="";;
+        02n) ICON="";;
+        03*) ICON="";;
+        04*) ICON="";;
+        09*) ICON="";;
+        10d) ICON="";;
+        10n) ICON="";;
+        11*) ICON="";;
+        13*) ICON="";;
+        50*) ICON="";;
+        *) ICON="";
+    esac
+
+    echo $ICON
+}
+
+# Global settings
+KEY="e6efd7a16ccc3588cbcf5e2fc6e54335"
+CITY="Eindhoven"
+UNITS="metric"
+SYMBOL="°C"
+API="https://api.openweathermap.org/data/2.5"
+
+# Get weather
+WEATHER=$(curl -sf "$API/weather?APPID=$KEY&q=$CITY&units=$UNITS")
+
+# Get condition, icon and temp
+#WEATHER_MAIN=$(echo $WEATHER | jq -r ".weather[0].main")
+WEATHER_ICON=$(echo $WEATHER | jq -r ".weather[0].icon")
+TMP=$(echo $WEATHER | jq -r ".main.temp")
+WEATHER_TEMP=${TMP/.*}
+
+# Print weather
+echo "$(get_icon $WEATHER_ICON) $WEATHER_TEMP$SYMBOL"
