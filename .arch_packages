@@ -1,5 +1,4 @@
 pacman -Qqe
-
 bash
 binutils
 bzip2
@@ -27,7 +26,6 @@ git
 gitkraken
 glibc
 grep
-groff
 grub
 gzip
 i3-gaps
@@ -40,7 +38,23 @@ iputils
 jfsutils
 jq
 less
+lib32-giflib
+lib32-gnutls
+lib32-gst-plugins-base-libs
+lib32-gtk3
+lib32-libldap
+lib32-libpulse
+lib32-libva
+lib32-libxcomposite
+lib32-libxinerama
+lib32-libxslt
+lib32-mpg123
 lib32-nvidia-utils
+lib32-ocl-icd
+lib32-openal
+lib32-sqlite
+lib32-v4l-utils
+lib32-vulkan-icd-loader
 libtool
 linux
 linux-firmware
@@ -63,6 +77,8 @@ noto-fonts-all
 noto-fonts-cjk
 nvidia
 nvidia-settings
+ocl-icd
+openal
 openssh
 os-prober
 pacman
@@ -102,9 +118,12 @@ usbutils
 util-linux
 vi
 vim
+vulkan-icd-loader
 watchdog
 wget
 which
+wine-staging
+winetricks
 xdotool
 xfsprogs
 xorg-server
