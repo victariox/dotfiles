@@ -147,10 +147,21 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 ## Window Assignment                                                    #
 #########################################################################
 
+assign [class="GitKraken"] $ws4
 assign [class="Steam"] $ws9
 assign [class="Spotify"] $ws8
 assign [class="ravenfield*"] $ws10
-for_window [class = "Spotify"] move to workspace $ws8
+assign [class="DarkSoulsIII*"] $ws10
+assign [class="RomeTW*"] $ws10
+assign [class="eu4"] $ws10
+assign [instance="^diablo iii64.exe$"] $ws10
+assign [instance="^explorer.exe$"] $ws0
+assign [instance="^battle.net.exe$"] $ws9
+
+for_window [instance="^diablo iii64.exe$" class="Wine"] move to workspace $ws10
+for_window [instance="^battle.net.exe$" class="Wine"] move to workspace $ws9 
+for_window [instance="^origin.exe$" class="Wine"] floating enable, fullscreen disable
+
 
 #########################################################################
 ## Application                                                          #
