@@ -1,137 +1,137 @@
-pacman -Qqe
-bash
-binutils
-bzip2
-clion
-clion-jre
-colorpicker
-coreutils
-cryptsetup
-device-mapper
-dhcpcd
-diffutils
-e2fsprogs
-efibootmgr
-fakeroot
-feh
-file
-filesystem
-findutils
-firefox
-gawk
-gcc
-gcc-libs
-gettext
-git
-gitkraken
-glibc
-grep
-grub
-gzip
-i3-gaps
-i3lock
-inetutils
-inkscape
-intel-ucode
-iproute2
-iputils
-jfsutils
-jq
-less
-lib32-giflib
-lib32-gnutls
-lib32-gst-plugins-base-libs
-lib32-gtk3
-lib32-libldap
-lib32-libpulse
-lib32-libva
-lib32-libxcomposite
-lib32-libxinerama
-lib32-libxslt
-lib32-mpg123
-lib32-nvidia-utils
-lib32-ocl-icd
-lib32-openal
-lib32-sqlite
-lib32-v4l-utils
-lib32-vkd3d
-lib32-vulkan-icd-loader
-libc++abi
-libtool
-linux
-linux-firmware
-logrotate
-lvm2
-ly-git
-m4
-make
-man-db
-man-pages
-mdadm
-mopidy
-mopidy-spotify-playlist-fix-git
-mpc
-mpv
-ncmpcpp
-neofetch
-netctl
-nordvpn-bin
-noto-fonts-all
-noto-fonts-cjk
-nvidia
-nvidia-settings
-ocl-icd
-openal
-openssh
-os-prober
-pacman
-pacman-contrib
-patch
-pavucontrol
-pciutils
-perl
-pkgconf
-polybar
-procps-ng
-psmisc
-pulseaudio
-pulseaudio-ctl
-python-pywal
-redshift-minimal
-reiserfsprogs
-rofi
-s-nail
-scrot
-sed
-shadow
-steam
-sudo
-sysfsutils
-systemd
-systemd-sysvcompat
-tar
-terminator
-termite
-texinfo
-transmission-cli
-ttf-anka-coder
-ttf-font-awesome
-unzip
-usbutils
-util-linux
-vi
-vim
-vulkan-icd-loader
-watchdog
-wget
-which
-wine-staging
-winetricks
-xdotool
-xfsprogs
-xorg-server
-xorg-xinit
-xorg-xprop
-xorg-xrandr
-yay
-zip
+pacman -Qe
+bash 5.0.007-1
+binutils 2.32-2
+bzip2 1.0.8-2
+clion 1:2019.2.1-1
+clion-jre 1:2019.2.1-1
+colorpicker 1.0.f5d441a-2
+coreutils 8.31-1
+cryptsetup 2.1.0-1
+device-mapper 2.02.185-1
+dhcpcd 7.2.2-1
+diffutils 3.7-1
+e2fsprogs 1.45.3-1
+efibootmgr 16-1
+fakeroot 1.23-1
+feh 3.2.1-1
+file 5.37-2
+filesystem 2019.05-2
+findutils 4.6.0-4
+firefox 68.0.2-1
+gawk 4.2.1-2
+gcc 9.1.0-2
+gcc-libs 9.1.0-2
+gettext 0.19.8.1-3
+git 2.22.1-1
+gitkraken 6.1.4-1
+glibc 2.29-4
+grep 3.3-1
+grub 2:2.04-2
+gzip 1.10-1
+i3-gaps 4.17-1
+i3lock 2.12-1
+inetutils 1.9.4-7
+inkscape 0.92.4-6
+intel-ucode 20190618-1
+iproute2 5.2.0-1
+iputils 20180629.f6aac8d-4
+jfsutils 1.1.15-6
+jq 1.6-2
+less 551-1
+lib32-giflib 5.2.1-1
+lib32-gnutls 3.6.9-1
+lib32-gst-plugins-base-libs 1.14.4-1
+lib32-gtk3 3.24.10-1
+lib32-libldap 2.4.47-1
+lib32-libpulse 12.2-1
+lib32-libva 2.4.0-1
+lib32-libxcomposite 0.4.5-1
+lib32-libxinerama 1.1.4-1
+lib32-libxslt 1.1.33-1
+lib32-mpg123 1.25.11-1
+lib32-nvidia-utils 430.40-1
+lib32-ocl-icd 2.2.12-2
+lib32-openal 1.19.1-1
+lib32-sqlite 3.29.0-1
+lib32-v4l-utils 1.16.2-1
+lib32-vkd3d 1.1-2
+lib32-vulkan-icd-loader 1.1.119-1
+libc++abi 8.0.1-1
+libtool 2.4.6+42+gb88cebd5-5
+linux 5.2.9.arch1-1
+linux-firmware 20190815.07b925b-1
+logrotate 3.15.0-1
+lvm2 2.02.185-1
+ly-git 0.2.1.r17.gd54e047-1
+m4 1.4.18-2
+make 4.2.1-3
+man-db 2.8.6.1-1
+man-pages 5.02-1
+mdadm 4.1-1
+mopidy 2.2.3-1
+mopidy-spotify-playlist-fix-git v1.0.0.r410.g62a16f0-2
+mpc 0.32-1
+mpv 1:0.29.1-8
+ncmpcpp 0.8.2-8
+neofetch 6.0.0-1
+netctl 1.20-1
+nordvpn-bin 3.3.0_4-2
+noto-fonts-all 20181224-1
+noto-fonts-cjk 20190409-1
+nvidia 430.40-5
+nvidia-settings 430.40-3
+ocl-icd 2.2.12-3
+openal 1.19.1-2
+openssh 8.0p1-2
+os-prober 1.77-1
+pacman 5.1.3-1
+pacman-contrib 1.1.0-1
+patch 2.7.6-7
+pavucontrol 1:4.0-1
+pciutils 3.6.2-1
+perl 5.30.0-3
+pkgconf 1.6.3-1
+polybar 3.4.0-2
+procps-ng 3.3.15-1
+psmisc 23.2-1
+pulseaudio 12.2-2
+pulseaudio-ctl 1.66-1
+python-pywal 3.3.0-1
+redshift-minimal 1.12-2
+reiserfsprogs 3.6.27-2
+rofi 1.5.4-1
+s-nail 14.9.14-1
+scrot 1.1.1-1
+sed 4.7-1
+shadow 4.7-2
+steam 1.0.0.61-1
+sudo 1.8.27-1
+sysfsutils 2.1.0-10
+systemd 242.84-2
+systemd-sysvcompat 242.84-2
+tar 1.32-1
+terminator 1.91-6
+termite 15-1
+texinfo 6.6-1
+transmission-cli 2.94-2
+ttf-anka-coder 1.100-1
+ttf-font-awesome 5.10.1-1
+unzip 6.0-13
+usbutils 010-1
+util-linux 2.34-3
+vi 1:070224-3
+vim 8.1.1776-1
+vulkan-icd-loader 1.1.119-1
+watchdog 5.15-2
+wget 1.20.3-2
+which 2.21-3
+wine-staging 4.13-1
+winetricks 20190615-1
+xdotool 3.20160805.1-2
+xfsprogs 4.20.0-2
+xorg-server 1.20.5-2
+xorg-xinit 1.4.1-1
+xorg-xprop 1.2.4-1
+xorg-xrandr 1.5.1-1
+yay 9.2.1-1
+zip 3.0-8
