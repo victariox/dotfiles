@@ -147,17 +147,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 ## Window Assignment                                                    #
 #########################################################################
 
-assign [class="GitKraken"] $ws4
-assign [class="Steam"] $ws9
-assign [class="Spotify"] $ws8
-assign [class="ravenfield*"] $ws10
-assign [class="DarkSoulsIII*"] $ws10
-assign [class="RomeTW*"] $ws10
-assign [class="eu4"] $ws10
+assign [instance="gitkraken"] $ws4
+assign [instance="^battle.net.exe$"] $ws9
 assign [instance="^diablo iii64.exe$"] $ws10
 assign [instance="^explorer.exe$"] $ws0
-assign [instance="^battle.net.exe$"] $ws9
-
 for_window [instance="^diablo iii64.exe$" class="Wine"] move to workspace $ws10
 for_window [instance="^battle.net.exe$" class="Wine"] move to workspace $ws9 
 for_window [instance="^origin.exe$" class="Wine"] floating enable, fullscreen disable
@@ -234,11 +227,15 @@ bindsym $mod+r mode "resize"
 ## Startup Applications                                                 #
 #########################################################################
 
-exec --no-startup-id feh --bg-center '/home/wolf/Projects/dotfiles/backgrounds/arch_horizontal.png' '/home/wolf/Projects/dotfiles/backgrounds/arch_vertical.png'
-
-exec --no-startup-id redshift -l 51.44:5.47
-
 exec_always --no-startup-id $HOME/Projects/dotfiles/polybar/launch_polybar.sh
 
 exec_always --no-startup-id $HOME/Projects/dotfiles/mopidy/launch_mopidy.sh
+
+# exec --no-startup-id feh --bg-center '/home/wolf/Projects/dotfiles/backgrounds/arch_horizontal.png' '/home/wolf/Projects/dotfiles/backgrounds/arch_vertical.png'
+
+exec --no-startup-id hsetroot -solid "#0C0C00"
+
+exec --no-startup-id redshift -l 51.44:5.47
+
+exec --no-startup-id compton
 

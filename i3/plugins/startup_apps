@@ -2,10 +2,14 @@
 ## Startup Applications                                                 #
 #########################################################################
 
-exec --no-startup-id feh --bg-center '/home/wolf/Projects/dotfiles/backgrounds/arch_horizontal.png' '/home/wolf/Projects/dotfiles/backgrounds/arch_vertical.png'
-
-exec --no-startup-id redshift -l 51.44:5.47
-
 exec_always --no-startup-id $HOME/Projects/dotfiles/polybar/launch_polybar.sh
 
 exec_always --no-startup-id $HOME/Projects/dotfiles/mopidy/launch_mopidy.sh
+
+# exec --no-startup-id feh --bg-center '/home/wolf/Projects/dotfiles/backgrounds/arch_horizontal.png' '/home/wolf/Projects/dotfiles/backgrounds/arch_vertical.png'
+
+exec --no-startup-id hsetroot -solid "#0C0C00"
+
+exec --no-startup-id redshift -l 51.44:5.47
+
+exec --no-startup-id compton
