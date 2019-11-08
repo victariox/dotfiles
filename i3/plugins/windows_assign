@@ -2,11 +2,13 @@
 ## Window Assignment                                                    #
 #########################################################################
 
-assign [instance="gitkraken"] $ws4
+assign [instance="^gitkraken$"] $ws4
 assign [instance="^battle.net.exe$"] $ws9
+assign [instance="^Steam$"] $ws9
 assign [instance="^diablo iii64.exe$"] $ws10
 assign [instance="^explorer.exe$"] $ws0
 for_window [instance="^diablo iii64.exe$" class="Wine"] move to workspace $ws10
 for_window [instance="^battle.net.exe$" class="Wine"] move to workspace $ws9 
 for_window [instance="^origin.exe$" class="Wine"] floating enable, fullscreen disable
+for_window [instance="project_ares"] floating enable move left 330px,move up 670px
 
