@@ -4,3 +4,5 @@
 
 set $mod   Mod1
 set $super Mod4
+
+mouse_warping none
