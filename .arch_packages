@@ -54,7 +54,7 @@ lib32-libxcomposite 0.4.5-1
 lib32-libxinerama 1.1.4-1
 lib32-libxslt 1.1.34-1
 lib32-mpg123 1.25.13-1
-lib32-nvidia-utils 440.59-1
+lib32-nvidia-utils 440.64-1
 lib32-ocl-icd 2.2.12-2
 lib32-openal 1.20.1-1
 lib32-sqlite 3.31.1-1
@@ -63,9 +63,9 @@ lib32-vkd3d 1.1-2
 lib32-vulkan-icd-loader 1.2.132-1
 libc++abi 9.0.1-1
 libtool 2.4.6+42+gb88cebd5-10
-linux 5.5.6.arch1-1
-linux-firmware 20200204.b791e15-1
-logrotate 3.15.1-2
+linux 5.5.8.arch1-1
+linux-firmware 20200224.efcfa03-1
+logrotate 3.16.0-1
 lua 5.3.5-3
 lvm2 2.02.186-5
 ly-git 0.2.1.r17.gd54e047-1
@@ -76,12 +76,12 @@ man-pages 5.05-1
 mdadm 4.1-2
 mutt 1.13.4-2
 ncspot-git 0.1.1-1
-neofetch 6.1.0-1
+neofetch 7.0.0-1
 netctl 1.20-2
 nordvpn-bin 3.6.1_1-1
 noto-fonts-all 20181224-1
 noto-fonts-cjk 20190409-1
-nvidia 440.59-10
+nvidia 440.64-2
 nvidia-settings 440.59-1
 ocl-icd 2.2.12-3
 openal 1.20.1-2
@@ -103,7 +103,7 @@ proton-git 1:4.11.11.r0.g9e542fa-1
 psmisc 23.3-2
 pulseaudio 13.0-3
 pulseaudio-ctl 1.67-1
-python 3.8.1-4
+python 3.8.2-1
 python2 2.7.17-1
 redshift-minimal 1.12-2
 reiserfsprogs 3.6.27-3
@@ -125,7 +125,7 @@ systemd-sysvcompat 244.3-1
 tar 1.32-3
 termite 15-1
 texinfo 6.7-2
-tiled 1.3.2-2
+tiled 1.3.3-1
 tmxlite-git v1.1.0.r1.g9092ba2-1
 transmission-cli 2.94-2
 tree 1.8.0-1
@@ -136,7 +136,7 @@ unzip 6.0-13
 usbutils 012-2
 util-linux 2.35.1-1
 vi 1:070224-4
-vim 8.2.0148-1
+vim 8.2.0343-1
 vulkan-icd-loader 1.2.132-1
 watchdog 5.15-2
 wget 1.20.3-2
