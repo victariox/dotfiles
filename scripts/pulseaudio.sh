@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pulse=$(pulseaudio-ctl full-status)
+pulse=$(pulseaudio-ctl full-status 2>&1)
 volume=`echo $pulse | awk '{print $1}'`
 is_muted=`echo $pulse | awk '{print $2}'`
 
@@ -24,6 +24,13 @@ volume_mute() {
 
 volume_print() {
     prefix=""
+
+    re='^[0-9]+$'
+    if ! [[ $volume =~ $re ]] ; then
+        echo ""
+        exit
+    fi
+
     if [ $is_muted == "yes" ]; then
         prefix=
     elif [ $volume -gt 75 ]; then
