@@ -165,7 +165,7 @@ for_window [instance="project_ares"] floating enable move left 330px,move up 670
 #########################################################################
 
 # i3-lock bindings
-bindsym $super+l exec i3lock -i ~/Pictures/portal_black.png && sleep 1 && xset dpms force off
+bindsym $super+l exec i3lock -i ~/Pictures/portal_black.png -u && sleep 1 && xset dpms force off
 
 # start dmenu (a program launcher)
 bindsym $mod+q exec "rofi -modi  window,drun -show drun  -location 2 -yoffset -5 -bw 5 -display-drun '$:' -display-window '#:' "
