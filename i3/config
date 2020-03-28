@@ -11,8 +11,8 @@ mouse_warping none
 ## Monitors                                                             #
 #########################################################################
 
-set $left_monitor HDMI-0 
-set $right_monitor DP-1
+set $left_monitor DisplayPort-0
+set $right_monitor DisplayPort-1
 
 #########################################################################                 
 ## Fonts                                                                #
