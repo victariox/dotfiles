@@ -150,6 +150,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 #########################################################################
 
 assign [instance="^gitkraken$"] $ws4
+assign [instance="^mailspring$"] $ws7
 assign [instance="^battle.net.exe$"] $ws9
 assign [instance="^Steam$"] $ws9
 assign [instance="^diablo iii64.exe$"] $ws10
