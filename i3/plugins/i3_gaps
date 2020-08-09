@@ -2,5 +2,11 @@
 ## i3-gaps                                                              #
 ######################################################################### 
 
-for_window [class="^.*"] border pixel -0
-#gaps inner 65 
+gaps inner 10
+gaps outer 0
+
+for_window [class="^.*"] border pixel 0
+for_window [title="^.*"] border pixel 0
+
+for_window [class="Alacritty"] border pixel 4
+

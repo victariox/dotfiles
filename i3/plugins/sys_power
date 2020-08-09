@@ -3,7 +3,7 @@
 #########################################################################
 
 set $sysmenu "system"
-bindsym $mod+Shift+Return      mode $sysmenu
+bindsym $super+Shift+Return      mode $sysmenu
 mode $sysmenu {                                                                                
     bindsym p         exec shutdown -P now
     bindsym r         exec shutdown -r now
