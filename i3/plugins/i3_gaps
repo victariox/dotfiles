@@ -2,11 +2,12 @@
 ## i3-gaps                                                              #
 ######################################################################### 
 
+new_window none
+
 gaps inner 10
 gaps outer 0
 
-for_window [class="^.*"] border pixel 0
-for_window [title="^.*"] border pixel 0
-
-for_window [class="Alacritty"] border pixel 4
+smart_gaps on
+# smart_borders on
+for_window [class="^.*"] border pixel 3
 
