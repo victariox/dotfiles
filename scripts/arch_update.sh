@@ -11,7 +11,7 @@ fi
 updates=$(("$updates_arch" + "$updates_aur"))
 
 if [ "$updates" -gt 0 ]; then
-    echo "%{F#FD1230} %{FFFFFFF}$updates"
+    echo "%{F#BF0000} %{F#EEEEEE} $updates"
 else
-    echo ""
+    echo "%{F#EEEEEE}"
 fi
