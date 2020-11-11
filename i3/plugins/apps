@@ -3,7 +3,7 @@
 #########################################################################
 
 # i3-lock bindings
-bindsym $mod+l exec i3lock -i ~/Pictures/portal_black.png -u && sleep 1 && xset dpms force off
+bindsym $mod+l exec i3lock -i ~/Pictures/portal_black.png -u
 
 # start dmenu (a program launcher)
 bindsym $super+q exec "rofi -modi  window,drun -show drun  -location 2 -yoffset -5 -bw 5 -display-drun '$:' -display-window '#:' &>/dev/null"

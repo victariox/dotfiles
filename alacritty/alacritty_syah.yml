@@ -22,16 +22,16 @@ scrolling:
 
 font: 
   normal:
-    family : JetBrains Mono
+    family : Fira Code
     style : Regular
   
   bold:
-    family : JetBrains Mono
-    style : Bold
+    family : Fira Code
+    style : Regular
 
   italic :
-    family : JetBrains Mono
-    style : Italic
+    family : Fira Code
+    style : Light
 
   size: 12.0
 
@@ -43,31 +43,33 @@ font:
     x: 0
     y: 0
 
-# Colors (Gruvbox Material Dark Medium)
+# Colors (Tangoish)
+# Note: Orange is used in place of Cyan
 colors:
   primary:
-    background: '0x282828'
-    foreground: '0xdfbf8e'
-
+    background: '#0C0C00'
+    foreground: '#FCFCFA'
+  # Normal colors
   normal:
-    black:   '0x665c54'
-    red:     '0xb02020'
-    green:   '0xa9b665'
-    yellow:  '0xe78a4e'
-    blue:    '0x7daea3'
-    magenta: '0xd3869b'
-    cyan:    '0x89b482'
-    white:   '0xdfbf8e'
+     black:   '#0C0C00'
+     red:     '#BF0000'
+     green:   '#73d216'
+     yellow:  '#edd400'
+     blue:    '#3465a4'
+     magenta: '#75507b'
+     cyan:    '#f57900'
+     white:   '#d3d7cf'
 
+  # Bright colors
   bright:
-    black:   '0x928374'
-    red:     '0xbf2020'
-    green:   '0xa9b665'
-    yellow:  '0xe3a84e'
-    blue:    '0x7daea3'
-    magenta: '0xd3869b'
-    cyan:    '0x89b482'
-    white:   '0xdfbf8e'
+     black:   '#0C0C00'
+     red:     '#BF0000'
+     green:   '#8ae234'
+     yellow:  '#fce94f'
+     blue:    '#729fcf'
+     magenta: '#ad7fa8'
+     cyan:    '#fcaf3e'
+     white:   '#eeeeec'
 
   indexed_colors: []
 

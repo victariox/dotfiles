@@ -1,16 +1,1 @@
-[theme]
-background = "black"
-primary = "white"
-secondary = "white"
-title = "white"
-playing = "#BF0000"
-playing_bg = "black"
-highlight = "light white"
-highlight_bg = "#484848"
-error = "light white"
-error_bg = "red"
-statusbar = "black"
-statusbar_progress = "white"
-statusbar_bg = "white"
-cmdline = "light white"
-cmdline_bg = "white"
+notify = true
