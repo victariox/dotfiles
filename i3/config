@@ -177,8 +177,8 @@ bindsym --release $mod+Sys_Req exec "scrot '/home/wolf/Pictures/Scrots/scrot_%d%
 bindsym --release $mod+Shift+Sys_Req exec "scrot '/home/wolf/Pictures/Scrots/scrot_%d%m%y_%H-%M-%S.png' -s"
 
 # media keys for mpc
-bindsym $mod+Up    exec "pulseaudio-ctl up"
-bindsym $mod+Down  exec "pulseaudio-ctl down"
+bindsym $mod+Up    exec "pamixer -i 10"
+bindsym $mod+Down  exec "pamixer -d 10"
 bindsym $mod+Left  exec "playerctl previous"
 bindsym $mod+Right exec "playerctl next"
 bindsym $mod+space exec "playerctl play-pause"
