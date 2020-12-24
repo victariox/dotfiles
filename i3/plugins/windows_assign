@@ -9,6 +9,9 @@ assign [instance="^Steam$"] $ws9
 assign [instance="^diablo iii64.exe$"] $ws10
 assign [instance="^explorer.exe$"] $ws0
 assign [instance="^lutris$"] $ws1
+assign [instance="^Mail$"] $ws7
+assign [instance="^Godot_Engine$"] $ws3
+
 for_window [instance="^diablo iii64.exe$" class="Wine"] move to workspace $ws10
 for_window [instance="^battle.net.exe$" class="Wine"] move to workspace $ws9 
 for_window [instance="origin.exe"] floating enable

@@ -47,7 +47,7 @@ font:
 colors:
   primary:
     background: '0x282828'
-    foreground: '0xdfbf8e'
+    foreground: '0xebdbb2'
 
   normal:
     black:   '0x665c54'

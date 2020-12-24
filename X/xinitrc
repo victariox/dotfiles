@@ -36,8 +36,8 @@ if [ -f ~/.xprofile ]; then
    source  ~/.xprofile
 fi
 
-#eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
-#export SSH_AUTH_SOCK
+eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
 
 dbus-update-activation-environment --systemd DISPLAY
 
