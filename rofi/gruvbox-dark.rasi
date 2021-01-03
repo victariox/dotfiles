@@ -10,7 +10,7 @@
     /* Gruvbox dark colors */
     gruvbox-dark-bg0:          #282828;
     gruvbox-dark-bg0-soft:     #32302f;
-    gruvbox-dark-bg3:          #665c54;
+    gruvbox-dark-bg3:          #A10808;
     gruvbox-dark-fg0:          #fbf1c7;
     gruvbox-dark-fg1:          #ebdbb2;
     gruvbox-dark-red-dark:     #b02020;
@@ -23,7 +23,6 @@
     background:                  @gruvbox-dark-bg0;
     background-color:            @background;
     foreground:                  @gruvbox-dark-fg1;
-    border-color:                @gruvbox-dark-gray;
     separatorcolor:              @border-color;
     scrollbar-handle:            @border-color;
 
