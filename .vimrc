@@ -5,14 +5,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'               "Vundle itself
-Plugin 'octol/vim-cpp-enhanced-highlight'   "More C++ things
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()            
 filetype plugin indent on       
 
 syntax on                                   "Colorful syntax
-colorscheme molokai                         "Set colorscheme 
 
 set tabstop=4                               "Spaces per TAB
 set softtabstop=4                           "Insert space per TAB

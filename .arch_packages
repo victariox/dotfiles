@@ -1,11 +1,10 @@
 alacritty 0.6.0-1
 alsa-plugins 1:1.2.2-2
-autoconf 2.69-7
+autoconf 2.70-1
 automake 1.16.2-3
 base 2-2
 binutils 2.35.1-1
 bison 3.7.2-1
-blender 17:2.91.0-8
 clion 1:2020.3-1
 clion-jre 1:2020.3-1
 cmake 3.19.2-1
@@ -21,7 +20,7 @@ fish 3.1.2-2
 flex 2.6.4-3
 gameconqueror 0.17-4
 gcc 10.2.0-4
-git 2.29.2-1
+git 2.30.0-1
 gitkraken 7.4.1-1
 godot 3.2.3-1
 groff 1.22.4-3
@@ -29,6 +28,7 @@ hsetroot 1.0.5-1
 i3-gaps 4.19-1
 intel-ucode 20201118-1
 jq 1.6-4
+kitty 0.19.3-1
 lib32-alsa-lib 1.2.4-2
 lib32-alsa-plugins 1.2.2-1
 lib32-giflib 5.2.1-1
@@ -45,7 +45,7 @@ lib32-libva 2.8.0-1
 lib32-libxcomposite 0.4.5-1
 lib32-libxinerama 1.1.4-1
 lib32-libxslt 1.1.34-1
-lib32-mpg123 1.26.3-1
+lib32-mpg123 1.26.4-1
 lib32-ncurses 6.2-1
 lib32-ocl-icd 2.2.13-1
 lib32-openal 1.21.0-1
@@ -73,14 +73,14 @@ patch 2.7.6-8
 picom-rounded-corners r1396.a99772b-1
 pkgconf 1.7.3-1
 playerctl 2.3.1-1
-polybar 3.5.2-1
+polybar 3.5.3-1
 protontricks 1.4.3-1
 pulseaudio 14.0-1
 python 3.9.1-1
 redshift-minimal 1.12-3
 refind 0.12.0-6
 rofi 1.6.1-1
-rust 1:1.48.0-1
+rust 1:1.49.0-1
 scrot 1.4-1
 sfml 2.5.1-2
 steam 1.0.0.68-1
@@ -89,8 +89,9 @@ texinfo 6.7-3
 thunderbird 78.6.0-2
 tiled 1.4.3-2
 tmxlite-git v1.2.1.r23.g849bcd9-1
+tree 1.8.0-2
 ttf-font-awesome 5.15.1-1
-ttf-jetbrains-mono 2.210-1
+ttf-jetbrains-mono 2.221-1
 vim 8.2.1989-3
 vulkan-radeon 20.3.1-1
 wine-staging 5.22-1
