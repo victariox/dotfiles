@@ -3,7 +3,7 @@
 #########################################################################
 
 # start a terminal
-bindsym $super+Return exec alacritty
+bindsym $super+Return exec kitty
 
 # kill focused window
 bindsym $super+Shift+q kill
