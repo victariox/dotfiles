@@ -1,0 +1,256 @@
+#########################################################################
+## Modifiers                                                            #
+#########################################################################
+
+set $mod   Mod1
+set $super Mod4
+
+mouse_warping none
+
+#########################################################################                 
+## Monitors                                                             #
+#########################################################################
+
+set $left_monitor DisplayPort-0
+set $right_monitor DisplayPort-1
+
+######################################################################### 
+## Fonts                                                                #
+#########################################################################
+
+font pango:Fira Code Regular 12
+
+#########################################################################
+## Workspaces                                                           #                 
+#########################################################################
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+workspace $ws1  output $left_monitor  #terminal 
+workspace $ws2  output $left_monitor  #editor
+workspace $ws3  output $right_monitor #editor-alt
+workspace $ws4  output $right_monitor #git
+workspace $ws5  output $left_monitor  #browser
+workspace $ws6  output $right_monitor #browser-alt
+workspace $ws7  output $right_monitor #reddit & netflix
+workspace $ws8  output $right_monitor #spotify
+workspace $ws9  output $right_monitor #steam
+workspace $ws10 output $left_monitor  #game
+
+# switch to workspace
+bindsym $super+1 workspace $ws1
+bindsym $super+2 workspace $ws2
+bindsym $super+3 workspace $ws3
+bindsym $super+4 workspace $ws4
+bindsym $super+5 workspace $ws5     
+bindsym $super+6 workspace $ws6
+bindsym $super+7 workspace $ws7
+bindsym $super+8 workspace $ws8
+bindsym $super+9 workspace $ws9
+bindsym $super+0 workspace $ws10
+
+# move focused container to workspace
+bindsym $super+Shift+1 move container to workspace $ws1
+bindsym $super+Shift+2 move container to workspace $ws2
+bindsym $super+Shift+3 move container to workspace $ws3
+bindsym $super+Shift+4 move container to workspace $ws4
+bindsym $super+Shift+5 move container to workspace $ws5
+bindsym $super+Shift+6 move container to workspace $ws6
+bindsym $super+Shift+7 move container to workspace $ws7
+bindsym $super+Shift+8 move container to workspace $ws8
+bindsym $super+Shift+9 move container to workspace $ws9
+bindsym $super+Shift+0 move container to workspace $ws10
+
+#########################################################################
+## Container Logic                                                      #                                          
+#########################################################################
+
+# change focus
+bindsym $super+j focus left
+bindsym $super+k focus down
+bindsym $super+l focus up                                                                        
+bindsym $super+semicolon focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $super+Left focus left
+bindsym $super+Down focus down
+bindsym $super+Up focus up
+bindsym $super+Right focus right
+
+# move focused window
+bindsym $super+Shift+j move left
+bindsym $super+Shift+k move down
+bindsym $super+Shift+l move up
+bindsym $super+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $super+Shift+Left move left
+bindsym $super+Shift+Down move down
+bindsym $super+Shift+Up move up
+bindsym $super+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $super+h split h
+
+# split in vertical orientation
+bindsym $super+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $super+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $super+s layout stacking
+bindsym $super+w layout tabbed
+bindsym $super+e layout toggle split
+
+# toggle tiling / floating
+bindsym $super+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $super+space focus mode_toggle
+
+# focus the parent container
+bindsym $super+a focus parent
+
+# focus the child container
+bindsym $super+d focus child
+
+#########################################################################
+## Actions                                                              #
+#########################################################################
+
+# start a terminal
+bindsym $super+Return exec alacritty
+
+# kill focused window
+bindsym $super+Shift+q kill
+
+# reload the configuration file
+bindsym $super+Shift+c reload
+
+# restart i3 inplace
+bindsym $super+Shift+r restart
+
+# exit i3
+bindsym $super+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+#########################################################################
+## Window Assignment                                                    #
+#########################################################################
+
+assign [instance="^gitkraken$"] $ws4
+assign [instance="^mailspring$"] $ws7
+assign [instance="^battle.net.exe$"] $ws9
+assign [instance="^Steam$"] $ws9
+assign [instance="^diablo iii64.exe$"] $ws10
+assign [instance="^explorer.exe$"] $ws0
+assign [instance="^lutris$"] $ws1
+assign [instance="^Mail$"] $ws7
+assign [instance="^Godot_Engine$"] $ws3
+
+for_window [instance="^diablo iii64.exe$" class="Wine"] move to workspace $ws10
+for_window [instance="^battle.net.exe$" class="Wine"] move to workspace $ws9 
+for_window [instance="origin.exe"] floating enable
+for_window [instance="project_ares"] floating enable move left 330px,move up 670px
+
+
+#########################################################################
+## Application                                                          #
+#########################################################################
+
+# i3-lock bindings
+bindsym $mod+l exec i3lock -i ~/Pictures/portal_black.png -u
+
+# start dmenu (a program launcher)
+bindsym $super+q exec "rofi -modi  window,drun -show drun  -location 2 -yoffset -5 -bw 5 -display-drun '$:' -display-window '#:' &>/dev/null"
+
+# scrot screenshot bindings
+bindsym --release $mod+Sys_Req exec "scrot '/home/wolf/Pictures/Scrots/scrot_%d%m%y_%H-%M-%S.png'"
+bindsym --release $mod+Shift+Sys_Req exec "scrot '/home/wolf/Pictures/Scrots/scrot_%d%m%y_%H-%M-%S.png' -s"
+
+# media keys for mpc
+bindsym $mod+Up    exec "pamixer -i 10"
+bindsym $mod+Down  exec "pamixer -d 10"
+bindsym $mod+Left  exec "playerctl previous"
+bindsym $mod+Right exec "playerctl next"
+bindsym $mod+space exec "playerctl play-pause"
+
+# function apps
+bindsym $mod+F1 exec "firefox"
+
+#########################################################################
+## i3-gaps                                                              #
+######################################################################### 
+
+new_window none
+
+gaps inner 10
+gaps outer 0
+
+smart_gaps on
+# smart_borders on
+for_window [class="^.*"] border pixel 0
+
+
+#########################################################################
+## Shutdown, Reboot, Lock Screen, and Logout                            #
+#########################################################################
+
+set $sysmenu "system"
+bindsym $super+Shift+Return      mode $sysmenu
+mode $sysmenu {                                                                                
+    bindsym p         exec shutdown -P now
+    bindsym r         exec shutdown -r now
+    bindsym Return    mode "default"
+    bindsym Escape    mode "default"
+}
+
+#########################################################################
+## Resize                                                               #
+#########################################################################
+
+mode "resize" {
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $super+r mode "resize"
+
+#########################################################################
+## Startup Applications                                                 #
+#########################################################################
+
+exec_always --no-startup-id $HOME/Projects/dotfiles/polybar/launch_polybar.sh
+
+exec --no-startup-id feh --bg-center '/home/wolf/Pictures/arch_gruvbox.png' '/home/wolf/Pictures/arch_gruvbox.png'
+
+#exec --no-startup-id hsetroot -solid "#0C0C00"
+
+exec --no-startup-id redshift -c /home/wolf/.config/redshift/redshift.conf
+
+exec --no-startup-id picom --config /home/wolf/.config/picom/picom.conf
+
+
