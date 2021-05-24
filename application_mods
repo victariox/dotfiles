@@ -1,4 +1,0 @@
-##Firefox
-
-### Disable alt-menu in Firefox
-about:config?filter=ui.key.menuAccessKeyFocuses Toggle it
