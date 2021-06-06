@@ -157,6 +157,7 @@ assign [instance="^diablo iii64.exe$"] $ws10
 assign [instance="^explorer.exe$"] $ws0
 assign [instance="^lutris$"] $ws1
 assign [instance="^Mail$"] $ws7
+assign [instance="^Godot_Engine$"] $ws3
 
 for_window [instance="^diablo iii64.exe$" class="Wine"] move to workspace $ws10
 for_window [instance="^battle.net.exe$" class="Wine"] move to workspace $ws9 
@@ -181,9 +182,9 @@ bindsym --release $mod+Shift+Sys_Req exec "scrot '/home/wolf/Pictures/Scrots/scr
 # media keys for mpc
 bindsym $mod+Up    exec "pamixer -i 10"
 bindsym $mod+Down  exec "pamixer -d 10"
-bindsym $mod+Left  exec "playerctl previous"
-bindsym $mod+Right exec "playerctl next"
-bindsym $mod+space exec "playerctl play-pause"
+bindsym $mod+Left  exec "mpc prev"
+bindsym $mod+Right exec "mpc next"
+bindsym $mod+space exec "mpc toggle"
 
 # function apps
 bindsym $mod+F1 exec "firefox"
