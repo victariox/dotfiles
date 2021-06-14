@@ -10,10 +10,8 @@ assign [instance="^diablo iii64.exe$"] $ws10
 assign [instance="^explorer.exe$"] $ws0
 assign [instance="^lutris$"] $ws1
 assign [instance="^Mail$"] $ws7
-assign [instance="^Godot_Engine$"] $ws3
+assign [instance="^Godot_Engine$"] $ws8
 
 for_window [instance="^diablo iii64.exe$" class="Wine"] move to workspace $ws10
 for_window [instance="^battle.net.exe$" class="Wine"] move to workspace $ws9 
-for_window [instance="origin.exe"] floating enable
-for_window [instance="project_ares"] floating enable move left 330px,move up 670px
-
+for_window [class="project-ares"] floating enable move to workspace $ws3
