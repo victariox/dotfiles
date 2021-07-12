@@ -17,7 +17,7 @@ dunst 1.6.1-2
 fakeroot 1.25.3-2
 feh 3.7-1
 firefox 89.0.2-1
-fish 3.3.0-1
+fish 3.3.1-1
 gameconqueror 0.17-5
 gcc 11.1.0-1
 git 2.32.0-1
@@ -47,7 +47,7 @@ lib32-libva 2.11.0-1
 lib32-libxcomposite 0.4.5-1
 lib32-libxinerama 1.1.4-1
 lib32-libxslt 1.1.34-1
-lib32-mpg123 1.28.0-1
+lib32-mpg123 1.28.1-1
 lib32-ncurses 6.2-1
 lib32-ocl-icd 2.3.0-1
 lib32-openal 1.21.1-1
@@ -56,11 +56,11 @@ lib32-v4l-utils 1.20.0-1
 lib32-vulkan-icd-loader 1.2.182-1
 lib32-vulkan-radeon 21.1.4-1
 libnotify 0.7.9-1
-linux 5.12.14.arch1-1
+linux 5.12.15.arch1-1
 linux-firmware 20210511.7685cf4-1
-linux-headers 5.12.14.arch1-1
+linux-headers 5.12.15.arch1-1
 lua 5.4.3-1
-lutris 0.5.8.3-2
+lutris 0.5.8.4-1
 m4 1.4.19-1
 make 4.3-3
 man-db 2.9.4-2
@@ -87,8 +87,9 @@ python-pip 20.3.4-1
 redshift-minimal 1.12-3
 refind 0.13.2-1
 rofi 1.6.1-1
-rust 1:1.53.0-1
+rust 1:1.53.0-2
 scrot 1.5-1
+slack-desktop 4.17.0-1
 steam 1.0.0.70-1
 sudo 1.9.7.p1-1
 texinfo 6.8-1
@@ -104,7 +105,7 @@ vulkan-radeon 21.1.4-1
 wine-staging 6.12.1-1
 xdg-utils 1.1.3+19+g9816ebb-1
 xf86-video-amdgpu 19.1.0-2
-xorg-server 1.20.11-1
+xorg-server 1.20.12-1
 xorg-xinit 1.4.1-3
 xorg-xkill 1.0.5-2
 xorg-xrandr 1.5.1-2
